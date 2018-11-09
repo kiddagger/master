@@ -5,10 +5,12 @@
     android:layout_height="match_parent">
 
 	<EditText
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content" />
+		android:id="@+id/inputBillAmountText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
 
 	<Button
+		android:id="@+id/calculateTipButton"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="CALCULATE" />
@@ -23,12 +25,13 @@
 		<TextView
 			android:text="Tip"
 			android:layout_width="wrap_content"
-			android:layout_height="match_parent"/>
+			android:layout_height="match_parent"
+			android:layout_marginRight="20dp" />
 
 		<TextView
+			android:id="@+id/outputTipText"
 			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
-			android:id="@+id/tipTextView" />
+			android:layout_height="match_parent" />
 	</LinearLayout>
 
 	<LinearLayout
@@ -39,14 +42,15 @@
 		android:layout_height="wrap_content">
 
 		<TextView
-			android:text="Text"
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"/>
-
-		<TextView
+			android:text="Total"
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
-			android:id="@+id/totalTextView" />
+			android:layout_marginRight="20dp" />
+
+		<TextView
+			android:id="@+id/outputTotalText"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent" />
 	</LinearLayout>
 
 </LinearLayout>
